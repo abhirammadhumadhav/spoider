@@ -1,9 +1,9 @@
 
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:spoider_app/common_widget/bottom_nav_bar.dart';
+
 import 'package:spoider_app/view/getstarted_screen/get_started_screen.dart';
 import 'package:spoider_app/view/home_screen/home_screen.dart';
 
@@ -24,11 +24,11 @@ Future<void> checkFirstTime() async{
  SharedPreferences pref  = await SharedPreferences.getInstance();
  bool isFirstTime = pref.getBool('firstTime') ?? true;
 
- Future.delayed(Duration(seconds: 2),(){
+ Future.delayed(const Duration(seconds: 2),(){
     if(isFirstTime){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => getStartedScree()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const getStartedScree()));
     }else{
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
     }
  });
 }
