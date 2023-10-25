@@ -26,7 +26,7 @@ Future<void> checkFirstTime() async{
 
  Future.delayed(const Duration(seconds: 2),(){
     if(isFirstTime){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const getStartedScree()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const GetStartedScreen()));
     }else{
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const HomeScreen()));
     }

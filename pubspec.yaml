@@ -58,6 +58,8 @@ flutter:
   assets:
     - lib/assets/spoiderLogo.jpeg
     - lib/assets/autoimage.jpeg
+    - lib/assets/7ca82f32-6f6e-4576-b7ce-2e39daa76620.jpeg
+    - lib/assets/driverimage.webp
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

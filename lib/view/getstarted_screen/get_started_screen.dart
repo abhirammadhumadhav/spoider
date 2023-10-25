@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:spoider_app/view/home_screen/home_screen.dart';
 
-class getStartedScree extends StatelessWidget {
-  const getStartedScree({super.key});
+class GetStartedScreen extends StatelessWidget {
+  const GetStartedScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class getStartedScree extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               width: 50,
               height: 50,
               child: Card(
@@ -51,6 +51,6 @@ class getStartedScree extends StatelessWidget {
   void onGetstartedPressed(BuildContext context) async{
   SharedPreferences pref = await SharedPreferences.getInstance();
   pref.setBool('firstTime', false);
-  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
   }
 }

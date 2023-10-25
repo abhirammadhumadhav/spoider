@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:spoider_app/view/profile_screen/profile_screen.dart';
 
 import '../view/home_screen/home_screen.dart';
 
@@ -13,7 +12,7 @@ class BottomNavBar extends StatefulWidget {
 int currentIndex = 0;
 final screens = [
   const HomeScreen(),
-  ProfileScreen()
+  
 ];
 
 class _BottomNavBarState extends State<BottomNavBar> {
